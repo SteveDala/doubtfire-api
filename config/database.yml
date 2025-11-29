@@ -4,6 +4,7 @@ development:
   username:     <%= ENV['DF_DEV_DB_USERNAME'] %>
   password:     <%= ENV['DF_DEV_DB_PASSWORD'] %>
   host:         <%= ENV['DF_DEV_DB_HOST']     %>
+  port: 3306
   min_messages: warning
 
 test:
@@ -12,6 +13,7 @@ test:
   username:     <%= ENV['DF_TEST_DB_USERNAME'] %>
   password:     <%= ENV['DF_TEST_DB_PASSWORD'] %>
   host:         <%= ENV['DF_TEST_DB_HOST']     %>
+  port: 3306
   min_messages: warning
 
 staging:
@@ -20,6 +22,7 @@ staging:
   database: <%= ENV['DF_STAGING_DB_DATABASE'] %>
   username: <%= ENV['DF_STAGING_DB_USERNAME'] %>
   password: <%= ENV['DF_STAGING_DB_PASSWORD'] %>
+  port: 3306
 
 production:
   adapter:  <%= ENV['DF_PRODUCTION_DB_ADAPTER']  %>
@@ -27,3 +30,4 @@ production:
   database: <%= ENV['DF_PRODUCTION_DB_DATABASE'] %>
   username: <%= ENV['DF_PRODUCTION_DB_USERNAME'] %>
   password: <%= ENV['DF_PRODUCTION_DB_PASSWORD'] %>
+  port: 3306
