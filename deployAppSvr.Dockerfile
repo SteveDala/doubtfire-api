@@ -1,7 +1,7 @@
 #
 # deployAppSrc.Dockerfile - the container used for back end processing
 #
-FROM ruby:3.1-bullseye
+FROM mcr.microsoft.com/devcontainers/ruby:3.4-bookworm
 
 # Setup dependencies
 ARG DEBIAN_FRONTEND=noninteractive
@@ -41,7 +41,7 @@ COPY ./.ci-setup /doubtfire/.ci-setup
 RUN /doubtfire/.ci-setup/texlive-install.sh
 
 # Install bundler
-RUN gem install bundler -v '2.4.5'
+RUN gem install bundler -v '2.5.11'
 RUN bundle config set --global without development test staging
 
 # Install the Gems
