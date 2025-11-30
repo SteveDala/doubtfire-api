@@ -6,7 +6,7 @@ AllCops:
     - vendor/**/*
     - spec/**/*
     - test/**/*
-  TargetRubyVersion: 3.1
+  TargetRubyVersion: 3.4.7
   NewCops: disable
 
 Style/HashSyntax:
